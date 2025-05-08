@@ -11,16 +11,17 @@
 <body>
     <div class="container">
         <h1>Profile Card Editor</h1>
-        <div>Profile Picture</div>
-        <h4 id="gantiNama">John Doe</h4>
-        <div>Web Developer</div>
+        <div class="card">
+            <div> <img src="" id="gantiGambar" alt="Profile Picture"></div> <br>
+            <h4 id="gantiNama">John Doe</h4>
+            <div id="gantiBio">Web Developer</div>
+        </div>
         <div>
-
-            <input type="text"> <br>
-            <input type="text" id="nama"> <br>
-            <input type="url"> <br>
+            <input type="text" id="nama" placeholder="Enter new name"> <br>
+            <input type="text" id="bio" placeholder="Enter new bio"> <br>
+            <input type="url" id="gambar" placeholder="Enter image URL"> <br>
             <button onclick="update()">Update Profile</button> <br>
-            <button>Reset</button>
+            <button onclick="reset()">Reset</button>
             
         </div>
     </div>
