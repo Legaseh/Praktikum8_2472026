@@ -1,0 +1,45 @@
+body{
+    background-color: tan;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "a"
+    "i"
+    "h";
+}
+.pemain{
+    grid-template: a;
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+}
+.player{
+    padding: 10px;
+    color: red;
+}
+.computer{
+    padding: 10px;
+    color: blue;
+}
+.vs{
+    grid-template: i;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+}
+.gambar1{
+    width: 100px;
+    height: 100px;
+}
+.gambar2{
+    height: 100px;
+    width: 100px;
+}
+.hasil{
+    grid-template: h;
+    margin: auto;
+    color: red;
+}
